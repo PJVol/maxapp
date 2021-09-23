@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "moduleResolution": "node",
+    "noEmit": true,
+    "strict": true,
+    "jsx": "react",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "plugins": [{"name": "typescript-tslint-plugin"}]
+  },
+  "include": [
+    "app"
+  ],
+  "exclude": [
+    "node_modules/**/*"
+  ]
+}

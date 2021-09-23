@@ -1,0 +1,125 @@
+v1.0:
+  Create pinpad screen:
+    ✔ Pinpad UI @done(2019-04-11 01:17) @project(v1.0 / Create pinpad screen)
+    ✔ Pincode setup and stores @done(2019-04-11 01:17) @project(v1.0 / Create pinpad screen)
+    ✔ TouchID, FaceID, etc. @done(2019-04-11 04:07) @project(v1.0 / Create pinpad screen)
+    ☐ Keypad rework with better design responsiveness
+    ☐ Change fingerprint process on Android
+  Agreement selection:
+    ✔ Fetch agreement list for token @done(2019-04-02 23:45) @project(v1.0 / ☐ Agreement selection)
+    ✔ Agreement list UI @done(2019-04-03 14:34) @project(v1.0 / ☐ Agreement selection)
+    ✔ Selected agreement store @done(2019-04-02 23:49) @project(v1.0 / ☐ Agreement selection)
+  Services:
+    ✔ Fetch services for selected agreement @done(2019-04-05 10:50) @project(v1.0 / Services)
+    ✔ Services lists UI @done(2019-04-05 18:23) @project(v1.0 / Services)
+    ✔ Add service blocks shrinking @done(2019-04-17 19:19) @project(v1.0 / Services)
+    ✘ Add animation to blocks shrinking @cancelled(2019-04-17 19:27) @project(v1.0 / Services)
+    ✘ Add services list pages for big lists with Fluid animation while navigating to it @cancelled(2019-04-17 19:19) @project(v1.0 / Services)
+    Service info:
+      ☐ Service page UI
+      ☐ Fetch service info
+      ☐ Implement plan change
+  Payments:
+    ✔ Fetch available payment types @done(2019-04-05 18:51) @project(v1.0 / Payments)
+    ✔ Fetch autopayment info @done(2019-04-05 19:26) @project(v1.0 / Payments)
+    ✔ Fetch payment hisotry @done(2019-04-12 19:51) @project(v1.0 / Payments)
+    ✔ Autopayment UI @done(2019-04-09 01:46) @project(v1.0 / Payments)
+    ✔ Card list @done(2019-04-09 12:33) @project(v1.0 / Payments)
+    ✔ Payment services page UI @done(2019-04-08 19:20) @project(v1.0 / Payments)
+    ✔ Autopayment settings @done(2019-04-08 19:48) @project(v1.0 / Payments)
+    ✔ Payment services params @done(2019-04-08 19:48) @project(v1.0 / Payments)
+    ✔ Payment history UI @done(2019-04-17 18:03) @project(v1.0 / Payments)
+    ✔ Maxnet paycards activation @done(2019-04-08 21:20) @project(v1.0 / Payments)
+    ✔ In-app browser for external payment services @done(2019-04-08 20:54) @project(v1.0 / Payments)
+    ✔ Add action sheet to confirm card actions @done(04-07-2019 18:06)
+    ☐ Add payment history refresh
+  Localisation:
+    ✔ Add localisation files @done(2019-04-03 17:44) @project(v1.0 / Localisation)
+    ✔ Add react-native localisation support @done(2019-04-03 17:44) @project(v1.0 / Localisation)
+    ✔ Add localisation to strings util @done(2019-04-03 17:44) @project(v1.0 / Localisation)
+    ✔ Add localisation to errors @done(2019-04-03 17:13) @project(v1.0 / Localisation)
+    ☐ Localise server-side error messages
+  Push notifications: 
+    ☐ Add incoming push handler @created(19-06-21 12:22)
+    ☐ Add agreement switching if push belongs to other agreement @created(19-06-21 12:22)
+    ✔ Add push messages pages @created(19-06-21 12:23) @done(04-07-2019 17:45)
+    ☐ Add routing based on message type @created(19-07-04 17:45)
+    ✔ Add messages fetching @created(19-07-04 17:45) @done(04-07-2019 17:45)
+    ☐ Mark message as read functionality @created(19-07-04 17:45)
+    ☐ Add messages container @created(19-07-04 17:46)
+    ☐ Add messages data updates and cleaning to other agreement related actions @created(19-07-04 18:06)
+  Misc:
+    ✔ Convert SVG files into react native svg components @done(2019-04-04 03:36) @project(v1.0 / Misc)
+    ✔ Tech support contact @done(2019-04-05 11:38) @project(v1.0 / Misc)
+    ✔ Balance @done(2019-04-03 01:55) @project(v1.0 / ☐ Misc)
+    ☐ App settings
+    ☐ WiFi codes
+    ✔ Agreement info in menu drawer @done(2019-04-06 13:19) @project(v1.0 / Misc)
+    ✘ Push notifications page @cancelled(04-07-2019 15:23)
+    ✔ Android push notifications @done(2019-04-08 10:36) @project(v1.0 / Misc)
+    ☐ News
+    ☐ Block
+    ✔ Decline seconds in timeout sms label @done(2019-04-17 18:04) @project(v1.0 / Misc)
+    ✔ Loading indicator @done(2019-04-03 18:30) @project(v1.0 / Misc)
+    ✔ App info initialization on start action @done(2019-04-04 19:25) @project(v1.0 / Misc)
+    ✔ Make all app screens a scrollview for album layout @done(2019-04-10 12:25) @project(v1.0 / Misc)
+    ✔ Move loading state setting from API actions into UI event handlers @done(2019-04-04 19:16) @project(v1.0 / Misc)
+    ✔ Android translucent and transparent status bar @done(2019-04-04 12:34) @project(v1.0 / Misc)
+    ✔ Add android back button handler to PinPad and Agreement Selection @done(2019-04-09 17:53) @project(v1.0 / Misc)
+    ☐ Add app blur when app becomes inactive
+    ✘ Add browser task bar on iOS with back, forward and update actions @cancelled(2019-04-10 14:33) @project(v1.0 / Misc)
+    ✔ Update balance after payment completed @done(2019-04-09 17:49) @project(v1.0 / Misc)
+    ✔ Migrate to RN gesture handler controls @done(2019-04-10 18:59) @project(v1.0 / Misc)
+    ✔ Add redux store persistance and security @done(2019-04-10 14:33) @project(v1.0 / Misc)
+    ☐ Add iOS Apple Wallet pass generation
+    ✔ Add android sms handling for sms code auto-complete @done(2019-04-10 20:16) @project(v1.0 / Misc)
+    ☐ Add iOS 3D Touch quick actions
+    ☐ Replace native Alert with custom Popup Dialog
+    ✔ Add size scaling @done(2019-04-24 17:06) @project(v1.0 / Misc)
+    ☐ Add swipe gesture handling to prevent stack navigator back gesture in horizontal scrollview and swipeables
+    ✔ Refactor styles @done(2019-04-24 17:06) @project(v1.0 / Misc)
+    ✔ Refactor app modules and imports @done(2019-04-21 19:14) @project(v1.0 / Misc)
+    ☐ Scroll to top on navigation header press @created(19-07-04 17:47)
+    ✘ Migrate to react-native-text-input-mask @project(v1.0 / Misc) @cancelled(03-09-2019 17:14)
+    ✔ Replace some SVG with FontAwesome analogues @done(2019-04-22 15:44) @project(v1.0 / Misc)
+    ✔ Integrate redux sagas for API fetching @done(04-07-2019 17:46)
+    ✔ Add app crash handling @done(2019-04-22 23:54) @project(v1.0 / Misc)
+    ✔ Add timeout to pincode locking @done(2019-05-08 17:57) @project(v1.0 / Misc)
+    ✔ Change menu highlight color @done(2019-04-23 10:31) @project(v1.0 / Misc)
+    ✔ Move agreement info to bottom of menu @done(2019-04-23 10:31) @project(v1.0 / Misc)
+    ✔ Find better text input masking @done(03-09-2019 17:14)
+    ✔ Add more info logging @done(2019-05-08 17:57) @project(v1.0 / Misc)
+    ☐ Add loading flag to all sagas' actions @created(19-07-04 18:07)
+  FixMe:
+    ✔ Fix Android network error issue @done(2019-04-04 02:58) @project(v1.0 / FixMe)
+    ✔ Fix Android in-app browser @done(2019-04-09 17:18) @project(v1.0 / FixMe)
+    ✔ Fix Android telpromt @done(2019-04-09 17:18) @project(v1.0 / FixMe)
+    ✔ Fix app crash when payment completed @done(2019-04-09 17:18) @project(v1.0 / FixMe)
+    ✔ Fix Android autopayment label in payment methods list @done(2019-04-10 14:45) @project(v1.0 / FixMe)
+    ✔ Fix android pinpad keys @done(2019-04-11 02:28) @project(v1.0 / FixMe)
+    ✘ Fix SVG icon sizing @cancelled(2019-04-22 15:44) @project(v1.0 / FixMe)
+    ✔ Fix android modal interrupting picker @done(2019-04-22 19:10) @project(v1.0 / FixMe)
+    ✔ Fix date and calendar icon alignments @done(2019-04-22 17:52) @project(v1.0 / FixMe)
+    ✘ Fix android date switching buttons ripple @cancelled(2019-04-22 18:08) @project(v1.0 / FixMe)
+    ✔ Fix network error Android API <24 @done(2019-04-19 15:49) @project(v1.0 / FixMe)
+    ✘ Fix invalid prop backgrond TouchableNativeFeedback @cancelled(2019-04-22 18:08) @project(v1.0 / FixMe)
+    ✔ Fix all ESLint errors @done(2019-04-22 16:31) @project(v1.0 / FixMe)
+    ✔ StatusBar is not translucent on older Android API @done(2019-04-22 18:54) @project(v1.0 / FixMe)
+    ✔ Auth store not cleared after app re-install @done(2019-04-22 18:38) @project(v1.0 / FixMe)
+    ✔ Fix contact support button top margin issue @done(2019-04-22 16:33) @project(v1.0 / FixMe)
+    ✔ Fix text input styling @done(2019-04-22 16:30) @project(v1.0 / FixMe)
+    ✔ Fix payment history top bar styling @done(2019-04-22 16:18) @project(v1.0 / FixMe)
+    ✔ Fix swipeable styling @done(2019-04-22 16:28) @project(v1.0 / FixMe)
+    ✔ Fix safe area in   payment history @done(2019-04-22 16:17) @project(v1.0 / FixMe)
+    ✔ Android picker issue @done(2019-04-22 19:19) @project(v1.0 / FixMe)
+    ✘ App crash on trying to open system browser @cancelled(2019-04-22 20:01) @project(v1.0 / FixMe)
+    ☐ Android back button handling in payments screen causes double-back
+    ☐ Fix android fingerprint
+    ☐ Fix iOS FaceID trigger
+    ☐ Change scaling ratio
+    ✔ Fix button styling @done(2019-05-08 18:03) @project(v1.0 / FixMe)
+  Web:
+    ☐ Add React.js for web integration to project using same business logic codebase
+
+v2.0:
+  ☐ Chat

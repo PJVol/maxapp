@@ -1,0 +1,7 @@
+username "ivan3177@icloud.com"
+
+force true
+copyright "© #{Time.now.year} «Макснет системы»"
+
+submit_for_review true
+automatic_release true
