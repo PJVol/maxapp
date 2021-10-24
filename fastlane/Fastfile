@@ -1,0 +1,104 @@
+default_platform(:ios)
+
+platform :ios do
+  desc "iOS TestFlight beta"
+  lane :beta do
+    sync_code_signing(type: "appstore", readonly: true)
+
+    increment_build_number(
+      xcodeproj: "./ios/maxapp.xcodeproj",
+      build_number: latest_testflight_build_number + 1
+    )
+
+    build_app(project: "./ios/maxapp.xcodeproj")
+    upload_to_testflight()
+    clean_build_artifacts
+  end
+
+  desc "App Store release deployment"
+  lane :release do
+    sync_code_signing(type: "appstore", readonly: true)
+
+    build_app
+    upload_to_app_store
+    clean_build_artifacts
+  end
+
+  desc "iOS screenshots"
+  lane :screenshots do
+    capture_screenshots(reinstall_app: true, configuration: "Release", sdk: "iphonesimulator")
+  end
+end
+
+platform :android do
+  desc "Android beta build"
+  lane :beta do
+    increment_version_code
+    gradle(
+      task: 'clean',
+      project_dir: './android'
+    )
+
+    build_android_app(
+      task: 'assemble',
+      build_type: 'Release',
+      project_dir: './android',
+      print_command: false,
+      print_command_output: false
+    )
+
+    # upload_to_play_store(track: 'beta',
+    #   apk_paths: ["./android/app/build/outputs/apk/release/app-armeabi-v7a-release.apk",
+    #     "./android/app/build/outputs/apk/release/app-x86-release.apk",
+    #     "./android/app/build/outputs/apk/release/app-arm64-v8a-release.apk"]
+    # )
+  end
+
+  desc "Android Play Store deployment"
+  lane :release do
+    increment_version_code
+    gradle(
+      task: 'clean',
+      project_dir: './android'
+    )
+
+    build_android_app(
+      task: 'assemble',
+      build_type: 'Release',
+      project_dir: './android',
+      print_command: false,
+      print_command_output: false
+    )
+
+    upload_to_play_store(
+      apk_paths: ["./android/app/build/outputs/apk/release/app-armeabi-v7a-release.apk",
+        "./android/app/build/outputs/apk/release/app-x86-release.apk",
+        "./android/app/build/outputs/apk/release/app-arm64-v8a-release.apk"]
+    )
+  end
+
+  desc "Build debug and test APK for screenshots"
+  lane :build_for_screengrab do
+    gradle(
+      task: 'clean',
+      project_dir: './android'
+    )
+    build_android_app(
+      task: 'assemble',
+      build_type: 'Debug',
+      project_dir: './android'
+    )
+    build_android_app(
+      task: 'assemble',
+      build_type: 'AndroidTest',
+      project_dir: './android'
+    )
+  end
+
+  desc "Android screenshots"
+  lane :screenshots do
+    # build_for_screengrab
+    capture_android_screenshots
+    #upload_to_play_store
+  end
+end

@@ -1,0 +1,4 @@
+scheme "maxapp-Release"
+
+clean true
+silent true

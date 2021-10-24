@@ -1,0 +1,37 @@
+devices([
+  "iPhone 4s",
+  "iPhone 5s",
+  "iPhone 6s",
+  "iPhone 6s Plus",
+  "iPhone 7",
+  "iPhone 7 Plus",
+  "iPhone 8",
+  "iPhone 8 Plus",
+  "iPhone SE",
+  "iPhone XS",
+  "iPhone XS Max",
+  "iPhone XR",
+  "iPad Pro (12.9-inch)",
+  "iPad Pro (12.9-inch) (2nd generation)",
+  "iPad Pro (12.9-inch) (3rd generation)",
+  "iPad Pro (9.7-inch)",
+  "iPad Pro (10.5-inch)",
+  "iPad Pro (11-inch)",
+  "iPad Air",
+  "iPad Air 2",
+  "iPad (5th generation)",
+  "iPad (6th generation)"
+])
+
+languages([
+  "ru",
+  "en-US"
+])
+
+scheme("maxappUITests")
+
+project("./ios/maxapp.xcodeproj")
+
+clear_previous_screenshots(true)
+
+skip_open_summary(true)

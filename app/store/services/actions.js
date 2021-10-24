@@ -1,0 +1,14 @@
+export const GET_SERVICES = "GET_SERVICES";
+export const GET_DIRECT = "GET_DIRECT";
+export const GET_IPTV = "GET_IPTV";
+export const GET_VOIP = "GET_VOIP";
+export const CLEAR_SERVICES = "CLEAR_SERVICES";
+
+export default {
+  SAVE_DIRECT: "SAVE_DIRECT",
+  REMOVE_DIRECT: "REMOVE_DIRECT",
+  SAVE_VOIP: "SAVE_VOIP",
+  REMOVE_VOIP: "REMOVE_VOIP",
+  SAVE_IPTV: "SAVE_IPTV",
+  REMOVE_IPTV: "REMOVE_IPTV"
+};
